@@ -1,31 +1,81 @@
 html{
   background-color: #da2028;
-}
-
-ul li {
-  list-style: none;
-  margin-bottom: 1rem;
-  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #393536;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  border-radius: 1rem;
+}
+
+ul {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  color: white;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: .8rem;
+}
+
+ul li label {
+  display: flex;  
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+ul li label h1 {
+  width: 10rem;
+}
+
+.right-style, .left-style {
+  width: 50%;
+}
+
+.right-style h1 {
+  order: 1;
+}
+
+.right-style input {
+  order: -1;
+}
+
+.right-style span {
+  display: none;
+}
+
+.left-style span {
+  font-size: 3rem;
+  margin: 0 .9rem 0 2rem;
 }
 
 input {
-  margin: 0rem 2rem;
+  padding: 0 .8rem;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 3rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  margin-top: .3rem;
 }
 
-.Belgie {
-  color: yellow;
-  text-decoration: underline;
-  text-decoration-color: black;
-  font-size: 2rem;
-}
-
-.Engeland {
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: blue;
-  font-size: 2rem;
+input:focus {
+  outline: none;
 }
