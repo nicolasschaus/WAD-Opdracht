@@ -9,7 +9,7 @@ class Bet extends Component {
   }
 
   handleChangeInput = (channel, value) => {
-    console.log("log vanuit app", value);
+    console.log("log uit de app", value);
     this.setState({[channel]: value});
   }
 
@@ -17,7 +17,6 @@ class Bet extends Component {
   render() {
   
   const {scoreMatch1Thuis, scoreMatch1Uit, scoreMatch2Thuis, scoreMatch2Uit, scoreMatch3Thuis, scoreMatch3Uit} = this.state;
-  const {ploeg, styleElement} = this.props;
 
   if (scoreMatch1Thuis > scoreMatch1Uit){
     console.log("belgie wint");

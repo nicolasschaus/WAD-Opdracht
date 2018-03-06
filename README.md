@@ -32,6 +32,22 @@ Week 1
 Wat ging er minder vlot:
 - Scores in setState zetten
 
+
+Week 2
+
+Wat ging er vlot:
+- Alles in mijn state krijgen, weet wel niet of het de juiste manier is (omdat ik met 6 scores zit ben ik nogal verward)
+- propTypes toevoegen ging vlot
+- Het gebruik van github ging vlot
+
+Wat ging er minder vlot:
+- Problemen gehad op github met mijn branches maar uiteindelijk kunnen oplossen
+
+Vragen?
+- Kan ik doormiddel van een for-lus mijn code semantischer maken? Ik weet niet goed hoe dit moet...
+- Mijn state staat in mijn Bet.jsx ipv in mijn App, ik weet niet of dit mag...
+
+
 Todo tegen volgende week:
 - Todo's aanmaken op git
 - Design verder afwerken (momenteel nog niet online)
