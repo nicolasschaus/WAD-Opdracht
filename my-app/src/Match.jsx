@@ -1,7 +1,50 @@
-import React, { Component } from 'react';
-import BetItem from "./BetItem";
+import React from 'react';
+import PropTypes from "prop-types";
 
-class Bet extends Component {
+const Match = ({ matches, onChangeMatch }) => {
+
+  const handleClickButton = id => {
+    console.log(id);
+  };
+
+  const handleChange = (e, id) => {
+    const {value, name} = e.currentTarget;
+    const match = {...matches[id]};
+    match[name] = value;
+    onChangeMatch(id, match);
+  }
+
+  const renderMatch = (match, id) => {
+    return (
+    <label key={id} className={id}>
+      <h1>{match.ploeg1}</h1>
+      <input type="number" name="score1" min="0" max="15" defaultValue={match.score1} onChange={e => handleChange(e, id)} />
+      <span>&#45;</span>
+      <input type="number" name="score2" min="0" max="15" defaultValue={match.score2} onChange={e => handleChange(e, id)} />
+      <h1>{match.ploeg2}</h1>
+    </label>
+    );
+  };
+
+    return (
+      <section className='matches-belgium'>
+        <form>
+        <h1>Wedstrijden</h1>
+        {Object.keys(matches).map(id => renderMatch(matches[id], id))}
+        <input type="submit" value="Submit"></input>
+        </form>
+      </section>
+    );
+};
+
+Match.propTypes = {
+  matches: PropTypes.object.isRequired,
+  onChangeMatch: PropTypes.func.isRequired
+};
+
+export default Match;
+
+/*class Bet extends Component {
 
   constructor(props){
     super(props)
@@ -50,5 +93,4 @@ class Bet extends Component {
    );
   };
 };
-
-export default Bet;
+*/
