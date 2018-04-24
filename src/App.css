@@ -31,8 +31,36 @@ form {
   background-color: #393536;
   margin: 0 auto;
   width: 60%;
-  padding: 2rem 0;
+  padding: 2rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form div h1 {
+  width: 33%;
+  text-align: left;
+}
+
+form h1 {
+  display: inline;
+}
+
+form div span {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.right {
+  text-align: right;
 }
 
 input {
@@ -43,7 +71,7 @@ input {
   width: 3rem;
   height: 2.8rem;
   border-radius: .5rem;
-  margin-top: .3rem;
+  margin-top: 1rem;
 }
 
 input:focus {
@@ -55,6 +83,38 @@ input[type=submit] {
   width: 20%;
   color: red;
   margin-top: 2rem;
+}
+
+ul li ul {
+  background-color: black;
+  color: white;
+  list-style: none;
+  padding: 1.5rem 10rem;
+  margin: 2rem;
+}
+
+ul li ul li {
+  list-style: none;
+  margin-bottom: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.bet-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timestamp {
+  font-size: .7rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+
+.NotFound {
+  font-size: 3rem;
+  margin-top: 10vh;
 }
 
 @media (max-width: 1000px) {
